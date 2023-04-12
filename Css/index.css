@@ -94,9 +94,9 @@ h3{
     font-weight: 600;
 }
 #hide-recipe {
-    font-size: 1em;
+    font-size: 1.2em;
     position: relative;
-    width: 28px;
+    width: 35px;
    background-color:rgb(18, 238, 220);
    border: none;
    left: 78%;
