@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{background-color: rgb(188, 240, 233);  }
+
+.contain{
+    background-color: white;
+    font-size: 16px;
+    padding: 1.2em 2.8em;
+    width: 90vw;
+    max-width: 32em;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 3px 1px black;
+    
+}
+.search{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 2.5fr;
+    gap: 1em;
+}
+.search input{
+    border: none;
+    font-size: 1em;
+    padding: 5px;
+    outline: none;
+    border-bottom: 2px solid black;
+
+}
+.search button{
+    font-size: 1em;
+    border: none;
+    background-color: rgb(18, 238, 220);
+    font-weight: 600;
+    border-radius: 3px;
+    
+}
+img {
+    display: block;
+    width: 40%;
+    margin: 20px auto 0 auto;
+}
+.details {
+    background-color: rgb(18, 238, 220);
+    position: relative;
+    margin: 0;
+    padding: 1px;    
+    font-size: 15px; 
+    text-align: center;  
+}
+
+h3{
+    text-align: center;
+    margin-top: 1em;
+}
+.details h2 {
+    margin: 5px;
+    
+}
+.details h4{margin: 0;
+    margin: 5px;}
+#recipe {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    white-space: pre-wrap;
+   word-wrap: break-word;
+   text-align: start;
+   padding: 0px 20px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.5em;
+    line-height: 1.4;
+    display: none;
+    box-shadow: 0px 0px 3px 1px black;
+}
+#show-recipe{
+    font-size: 1em;
+    position: relative;
+    left: 75%;
+    padding: 8px 11px;
+    border-radius: 3px;
+    background-color: rgb(18, 238, 220);
+    border: none;
+    top: 10px;
+    font-weight: 600;
+}
+#hide-recipe {
+    font-size: 1em;
+    position: relative;
+    width: 28px;
+   background-color:rgb(18, 238, 220);
+   border: none;
+   left: 78%;
+   border-radius: 3px;
+}
+ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px 30px;
+    padding: 15px 0 0 30px;
+}
+
+@media screen and (max-width:580px){
+    .contain{ font-size: 14px;
+        left: 5%;}
+    .search button{
+        padding: 5px;
+        
+        }
+    #hide-recipe{
+        left:70%;
+    }
+    #show-recipe{
+        left: 70%;
+        
+    }
+    .details{
+        font-size: 11px;
+    }
+}
+
+
